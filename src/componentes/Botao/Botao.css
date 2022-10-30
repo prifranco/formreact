@@ -1,0 +1,19 @@
+.botao {
+    text-align: center;
+}
+.botao button {
+    background-color: #027263;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 2em;
+    padding: 1.025em;
+    width: 100px;
+    transition: .3s ease-in-out;
+}
+
+.botao button:hover {
+    background-color: #003d35;
+    transition: .3s ease-in-out;
+}

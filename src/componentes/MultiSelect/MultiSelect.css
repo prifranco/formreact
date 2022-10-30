@@ -1,0 +1,9 @@
+.multi-select {
+    margin-top: 2em;
+}
+.multi-select label {
+    display: block;
+    font-size: 1.025em;
+    font-weight: 600;
+    color: #00726c;
+}
