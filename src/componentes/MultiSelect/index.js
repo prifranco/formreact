@@ -35,19 +35,22 @@ export const MultiSelect = () => {
         setCidadesId(recuperaCidadesId)
       }
 
-    return (
+    /*Deveria estar no select mas não consigo fazer funcionar: 
+      paises.map((retornaPaises) {
+              <option key={retornaPaises.paises_id} value={retornaPaises.paises_id}>{retornaPaises.paises__nome}</option>
+            }) 
+      paises.map((retornaCidades){
+              <option key={retornaCidades.cidades_id} value={retornaCidades.cidades_id}>{retornaCidades.cidades__nome}</option>
+            }) 
+        */
+      return (
         <div className='multi-select'>
             <label>Países</label>
             <Select isMulti onChange={(e)=> seguraPaises(e)}>
-            paises.map((retornaPaises) {
-              <option key={retornaPaises.paises_id} value={retornaPaises.paises_id}>{retornaPaises.paises__nome}</option>
-            })
             </Select>
-
-            <Select isMulti onChange={(e)=> seguraCidades(e)}>
-            paises.map((retornaCidades){
-              <option key={retornaCidades.cidades_id} value={retornaCidades.cidades_id}>{retornaCidades.cidades__nome}</option>
-            })
+            
+            <label>Cidades</label>
+            <Select isMulti onChange={(e)=> seguraCidades(e)}>   
             </Select>
         </div>
     )
